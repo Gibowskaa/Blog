@@ -1,0 +1,110 @@
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(95, 170, 204, 0.753);
+    color: #ffffff; /*kolor czcionki*/
+    backdrop-filter: saturate(180%) blur(20px); /*rozmycie*/
+    font-weight: 400; /*rodzaj wgranej czcionki, trzeba dać nr*/
+    position: sticky; /*przykleja element*/
+    top: 0; /*pozycja na stronie*/ 
+}
+
+a{
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
+.wrap{
+max-width: 1000px; /*ile strona ma pixeli w szerokości*/
+margin: 0 auto; /*marginesy*/
+display: flex; /*napisy koło siebie*/
+justify-content: space-between; /*odstęp między wyrazami*/
+}
+.itemwrap{
+display: flex;
+}
+@media(max-width: 500px){
+    .itemwrap{
+        display: none;
+    }
+}
+.item{
+    padding: 0 30px;
+    line-height: 60px;
+    color: white;
+}
+.logo{
+    padding: 0 30px;
+    line-height: 60px; /*linia żeby było na środku*/
+  
+}
+body{
+    margin: 0; /*margines zewnętrzny*/
+    padding: 0; /*margines wewnętrzny*/
+}
+*{
+    font-family: 'Source Sans Pro', sans-serif; /*czcionka*/
+}
+header{
+    margin-top: -60px;
+width: 100%;
+height: 750px;
+background-image: url("jantar.jpg"); /*dodanie zdjęcia*/
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*blog*/
+main{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.postlist{ /*kropka oznacza klase*/
+    display: grid; /*wyświetla w siatce*/
+    grid-template-columns: repeat(3,1fr); /*definicja kolumn*/
+    grid-gap: 30px; /*odległośc pomiędzy kolumnami*/
+}
+@media(max-width: 500px){
+    .postlist{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width: 700px) and (min-width: 500px) {
+    .postlist{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+article>img{
+    width: 100%;
+}
+article{
+    box-shadow: 19px 15px 48px -7px rgba(34,30,30,0.75);
+}
+.tekst>.category{
+color: rgba(62, 129, 160, 0.753);
+font-weight: 600;
+margin: 0;
+}
+.text>h3{
+    color: #111;
+    font-size: 20px;
+}
+.authortekst>p{
+    color: black;
+    margin: 0;
+}
+.author{
+    display: flex;
+}
+.author>img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; /*kółko wokół zdj*/
+    margin-right: 16px;
+}
+.tekst{
+    padding: 24px;
+}
+main>h2{
+    text-align: center;
+    color:  black;
+}
