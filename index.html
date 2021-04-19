@@ -5,93 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koniarowo</title> 
+    <title>Koniarowo</title>
     <!-- tytuł strony -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Sou
+    <link href="https://fonts.googleapis.com/css2?family=Sou
 rce+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0
 ,900;1,200;1,300;1,400;1,600;1,700;1,900&displ
-ay=swap" rel="stylesheet"> 
+ay=swap" rel="stylesheet">
 
 
-<!-- czcionka -->
+    <!-- czcionka -->
 </head>
 
 <body>
     <nav>
-        <div class="wrap"> 
-        <div class="logo">🦄 Koniarowo</div>
-        <div class="itemwrap">
-            <a href="">
-                <div class="item">Strona Główna</div>
-            </a>
-            <a href="">
-                <div class="item">Blog</div>
-            </a>
-            <a href="">
-                <div class="item">Kontakt</div>
-                <!-- nazwy okienek na stronie -->
-            </a>
+        <div class="wrap">
+            <div class="logo">🦄 Koniarowo</div>
+            <div class="itemwrap">
+                <a href="">
+                    <div class="item">Strona Główna</div>
+                </a>
+                <a href="#Blog">
+                    <div class="item">Blog</div>
+                </a>
+                <a href="#Kontakt"> <!--gdzie ma przekierować-->
+                    <div class="item">Kontakt</div>
+                    <!-- nazwy okienek na stronie -->
+                </a>
+            </div>
         </div>
-    </div>
 
     </nav>
     <!-- główny obrazek -->
     <header></header>
     <!-- blog -->
-    <main>
+    <main id="Blog">
         <h2>BLOG</h2>
         <div class="postlist">
-<a href="">
-    <article>
-        <img src="jeden.jpg" alt="koń">
-        <div class="tekst">
-            <p class="category">STRACH MA WIELKIE OCZY</p>
-            <h3>Jak radzić sobie ze strachem?</h3>
-            <div class="author">
-                <img src="dalia.jpg" alt="Dalia Lehmann">
-                <div class="authortekst">
-                    <p>Dalia Lehmann</p>
-                    <p>04.06.2020</p>
-                </div>
-            </div>
-        </div>
-    </article>
-</a>
-<a href="">
-    <article>
-        <img src="dwa.jpg" alt="koń">
-        <div class="tekst">
-            <p class="category">ZAWODY</p>
-            <h3>Gotowi do startu,start!</h3>
-            <div class="author">
-                <img src="dalia.jpg" alt="Dalia Lehmann">
-                <div class="authortekst">
-                    <p>Dalia Lehmann</p>
-                    <p>05.10.2020</p>
-                </div>
-            </div>
-        </div>
-    </article>
-</a>
-<a href="">
-    <article>
-        <img src="janusz.jpg" alt="koń">
-        <div class="tekst">
-            <p class="category">OWIJKI CZY OCHRANIACZE?</p>
-            <h3>Co jest lepsze?</h3>
-            <div class="author">
-                <img src="dalia.jpg" alt="Dalia Lehmann">
-                <div class="authortekst">
-                    <p>Dalia Lehmann</p>
-                    <p>24.11.2020</p>
-                </div>
-            </div>
-        </div>
-    </article>
-</a>
+            <a href="jakradzicsobiezestrachem.html">
+                <article>
+                    <img src="jeden.jpg" alt="koń">
+                    <div class="tekst">
+                        <p class="category">STRACH MA WIELKIE OCZY</p>
+                        <h3>Jak radzić sobie ze strachem?</h3>
+                        <div class="author">
+                            <img src="dalia.jpg" alt="Dalia Lehmann">
+                            <div class="authortekst">
+                                <p>Dalia Lehmann</p>
+                                <p>04.06.2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="gotowidostartu.html">
+                <article>
+                    <img src="dwa.jpg" alt="koń">
+                    <div class="tekst">
+                        <p class="category">ZAWODY</p>
+                        <h3>Gotowi do startu,start!</h3>
+                        <div class="author">
+                            <img src="dalia.jpg" alt="Dalia Lehmann">
+                            <div class="authortekst">
+                                <p>Dalia Lehmann</p>
+                                <p>05.10.2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="cojestlepsze.html">
+                <article>
+                    <img src="janusz.jpg" alt="koń">
+                    <div class="tekst">
+                        <p class="category">OWIJKI CZY OCHRANIACZE?</p>
+                        <h3>Co jest lepsze?</h3>
+                        <div class="author">
+                            <img src="dalia.jpg" alt="Dalia Lehmann">
+                            <div class="authortekst">
+                                <p>Dalia Lehmann</p>
+                                <p>24.11.2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </a>
         </div>
     </main>
+    <!-- sekcja kontaktowa -->
+    <section id="Kontakt">
+        <h2>KONTAKT</h2>
+        <img src="dalia.jpg" alt="Dalia Lehmann">
+        <form action="">
+            <input type="text" placeholder="Imię i nazwisko">
+            <input type="email" placeholder="Email">
+            <textarea name="" id="" cols="30" rows="5" 
+            placeholder="Wiadomość"></textarea>
+            <input type="submit" value="Wyślij">
+        </form>
+    </section>
+    <!-- Stopka, to z c w kółku -->
+    <footer>&copy; 2021 🦄 Koniarowo | All rights reserved</footer> 
 </body>
+
 </html>
