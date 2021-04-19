@@ -1,3 +1,6 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif; /*czcionka*/
+}
 nav{
     width: 100%;
     height: 60px;
@@ -41,9 +44,7 @@ body{
     margin: 0; /*margines zewnętrzny*/
     padding: 0; /*margines wewnętrzny*/
 }
-*{
-    font-family: 'Source Sans Pro', sans-serif; /*czcionka*/
-}
+
 header{
     margin-top: -60px;
 width: 100%;
